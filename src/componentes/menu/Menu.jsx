@@ -9,7 +9,7 @@ const Menu = () =>{
       <ul>
         <li> <Link to ="/" > Inicio</Link> </li>
         <li> <Link to ="/casas" > Casas </Link> </li>
-        <li> <Link to ="/pociones" > Posiones </Link> </li>
+        <li> <Link to ="/pociones" > Pociones </Link> </li>
 
       </ul>
 

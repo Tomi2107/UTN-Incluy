@@ -21,6 +21,7 @@ const editar = () => {
         {completada ? 'pendiente' : 'Completar'}
       </button>
       <button onClick={eliminar}>Eliminar</button>
+      <button onClick={editar}>Editar</button>
       </div>
   );
 };

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 const FormularioDePociones = ({ agregarPocion, pocionEditando  }) => {
     const [nuevaPocion, setNuevaPocion] = useState('');

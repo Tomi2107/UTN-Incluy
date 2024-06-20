@@ -53,7 +53,7 @@ const eliminarPocion = (id) => {
   };
 // Editar pocion
 const editarPocion = (id) => {
-  const pocion = pociones.find((p) => p.id === id);
+  const pocion = pociones.find((pocion) => pocion.id === id);
     setPocionEditando(pocion);
 };
 
