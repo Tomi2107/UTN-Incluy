@@ -1,10 +1,33 @@
 .seccion{
   background-color: #f3f3f3;
   border: 2px solid #343434;
-  padding: 2rem;
+  padding: 4rem;
   margin: 2rem;
   text-align: center;
 }
 .seccion img{
   max-width: 100%;
+}
+.pocion button{
+  margin: 0.2rem;
+  padding: 0.4rem 10px;
+  background-color: rgb(183, 193, 193);
+}
+ .button{
+  margin: 0.6rem;
+  padding: 0.4rem 10px;
+  background-color: rgb(183, 193, 193);
+}
+span{
+  margin: 0.2rem;
+  padding: 0.4rem 9rem;
+  background-color: rgb(215, 225, 225);
+  color: rgb(10, 10, 10);
+border-radius: 20px;}
+input{
+  margin: 0.2rem;
+  padding: 0.4rem 9rem;
+  border-radius: 15px;
+  border: solid 1px lightblue;
+  text-align:start;
 }

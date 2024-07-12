@@ -5,7 +5,7 @@ import FormularioDePociones from "./FormularioDePociones";
 const GestionPociones = () =>{
   const [pociones, setPociones] = useState([]);
   const [pocionEditando, setPocionEditando] = useState(null);
-
+//trabajando en la componentizacion
   // Carga inicial de las pociones desde localStorage al montar el componente
   useEffect(() => {
     const pocionesGuardadas = JSON.parse(localStorage.getItem('pociones'));
@@ -17,6 +17,7 @@ const GestionPociones = () =>{
   // Guarda las pociones en localStorage cada vez que cambia el estado de pociones
   useEffect(() => {
     localStorage.setItem('pociones', JSON.stringify(pociones))
+    console.log("Pociones:", JSON.stringify(pociones, null, 2));
   }, [pociones]);
 
 

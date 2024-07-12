@@ -5,11 +5,11 @@ const FormularioDePociones = ({ agregarPocion, pocionEditando  }) => {
 
     useEffect(() => {
         if (pocionEditando) {
-          setNuevaPocion(pocionEditando.nuevaPocion);
+        setNuevaPocion(pocionEditando.nuevaPocion);
         } else {
-          setNuevaPocion("");
+        setNuevaPocion("");
         }
-      }, [pocionEditando]);
+    }, [pocionEditando]);
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -18,7 +18,8 @@ const FormularioDePociones = ({ agregarPocion, pocionEditando  }) => {
             agregarPocion(nuevaPocion);
             // Limpia el estado del input después de agregar la poción
             setNuevaPocion('');
-        }
+        } 
+
     };
 
     return (
@@ -31,7 +32,7 @@ const FormularioDePociones = ({ agregarPocion, pocionEditando  }) => {
                 placeholder="Nueva Poción"
             />
             {/* Botón para enviar el formulario y agregar la poción */}
-            <button type="submit">{pocionEditando ? "Guardar cambios" : "Agregar poción"}</button>            
+            <button className="button" type="submit">{pocionEditando ? "Guardar cambios" : "Agregar poción"}</button>            
         </form>
     );
 };
